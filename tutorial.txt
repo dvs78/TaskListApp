@@ -149,6 +149,7 @@ Esse comando faz o Git converter LF para CRLF no checkout e reverter para LF no 
 
 -----------------------------------------------------------------------------------------
 5 PASSO - CRIAR A PÁGINA LOGIN
+Em src criar a pasta pages, dentro dela criar a pasta login e home, e dentro de cada pasta criar Login.jsx e Home.jsx
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // import para navegação

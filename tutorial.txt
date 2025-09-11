@@ -149,7 +149,10 @@ Esse comando faz o Git converter LF para CRLF no checkout e reverter para LF no 
 
 -----------------------------------------------------------------------------------------
 5 PASSO - CRIAR A PÁGINA LOGIN
-Em src criar a pasta pages, dentro dela criar a pasta login e home, e dentro de cada pasta criar Login.jsx e Home.jsx
+Em src criar a pasta pages, dentro dela criar a pasta security e home, e dentro de cada pasta criar Login.jsx e Home.jsx
+
+Digitar no terminal, pasta frontend:
+npm i react-router-dom
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // import para navegação
@@ -192,12 +195,20 @@ const Login = () => {
 
 export default Login;
 
+E Home.jsx fica assim:
+import React from "react";
+
+const Home = () => {
+  return <div>Home</div>;
+};
+
+export default Home;
+
 
 -----------------------------------------------------------------------------------------
 6. CRIANDO AS ROTAS DO PROJETO
 Instalar o gerenciador de rotas
-Digitar no terminal, pasta frontend:
-npm i react-router-dom
+
 
 Em App.jsx, importar BrowserRouter, Routes e Route para gerenciar as rotas:
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -207,7 +218,7 @@ Dentro da pasta components, criar o arquivo Header
 
 Deixar a página App.jsx, assim:
 import Home from "./pages/home/Home";
-import Login from "./pages/login/Login";
+import Login from "./pages/security/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
